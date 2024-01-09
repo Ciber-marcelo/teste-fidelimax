@@ -17,8 +17,8 @@ export default function Header() {
 
          <div className="flex items-center gap-4">
             <div className="flex items-center justify-center w-10 h-10 rounded-full bg-color2 text-white font-[600]">N</div>
-            <span className="text-xs text-white font-[600]">Nome do Usuário Aqui</span>
-            <FaChevronDown size='24' color='white' />
+            <span className="text-xs text-white font-[600] hidden sm:flex">Nome do Usuário Aqui</span>
+            <FaChevronDown size='16' color='white' />
          </div>
       </div>
    )
