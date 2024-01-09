@@ -1,69 +1,11 @@
 import Header from '@/components/header'
+import Main from '@/components/main'
 
 export default function Home() {
   return (
     <div>
       <Header />
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
-      <p>rrr</p>
+      <Main />
     </div>
   )
 }
