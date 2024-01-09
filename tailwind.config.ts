@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         color1: '#19202D',
         color2: '#333E4F',
+        color3: '#ACB1BA',
       },
       fontFamily: {
         sans: ['var(--font-poppins)']
