@@ -8,6 +8,7 @@ export default function Header() {
          <div className="flex items-center gap-4">
             <CgMenuLeftAlt size='24' color='white' />
             <Image
+               className="hidden sm:flex sm:"
                width={126}
                height={20}
                src='/images/SUA LOGO.svg'

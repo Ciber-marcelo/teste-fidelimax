@@ -13,7 +13,8 @@ export default function Button({ name, onClick }: buttonProps) {
             border-color5 
             rounded-full 
             h-[56px]
-            px-16 
+            px-16
+            max-w-[187px]
             hover:bg-color3
             transition-all
             text-[18px]

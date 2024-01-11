@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { TiStar } from "react-icons/ti";
 
 type q1Props = {
@@ -6,6 +7,12 @@ type q1Props = {
 }
 
 export default function Question1({content, answerValue}: q1Props) {
+   const [stars, setStars] = useState(answerValue);
+
+   function starNumber(n: number) {
+      setStars(n)
+   }
+
    return (
       <div className="max-w-[584px] mb-10">
          <span className="text-2xl font-[600] text-color1">
@@ -17,11 +24,25 @@ export default function Question1({content, answerValue}: q1Props) {
          </p>
 
          <div className="flex flex-wrap gap-4 mt-4" >
-            <TiStar size={'64'} color={answerValue >= 1 ?'#FFAE00' : '#ACB1BA'}/>
-            <TiStar size={'64'} color={answerValue >= 2 ?'#FFAE00' : '#ACB1BA'}/>
-            <TiStar size={'64'} color={answerValue >= 3 ?'#FFAE00' : '#ACB1BA'}/>
-            <TiStar size={'64'} color={answerValue >= 4 ?'#FFAE00' : '#ACB1BA'}/>
-            <TiStar size={'64'} color={answerValue >= 5 ?'#FFAE00' : '#ACB1BA'}/>
+            <a onClick={() => starNumber(1)}>
+               <TiStar size={'64'} color={stars >= 1 ?'#FFAE00' : '#ACB1BA'}/>
+            </a>
+
+            <a onClick={() => starNumber(2)}>
+               <TiStar size={'64'} color={stars >= 2 ?'#FFAE00' : '#ACB1BA'}/>
+            </a>
+
+            <a onClick={() => starNumber(3)}>
+               <TiStar size={'64'} color={stars >= 3 ?'#FFAE00' : '#ACB1BA'}/>
+            </a>
+
+            <a onClick={() => starNumber(4)}>
+               <TiStar size={'64'} color={stars >= 4 ?'#FFAE00' : '#ACB1BA'}/>
+            </a>
+
+            <a onClick={() => starNumber(5)}>
+               <TiStar size={'64'} color={stars >= 5 ?'#FFAE00' : '#ACB1BA'}/>
+            </a>
          </div>
       </div>
    )
